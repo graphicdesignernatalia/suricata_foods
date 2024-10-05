@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetElement = document.querySelector(targetId); // Selecciona el elemento destino
 
             if (targetElement) {
+<<<<<<< HEAD
                 // Obtiene la altura del navbar para descontarla del scroll
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
@@ -18,10 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.scrollTo({
                     top: targetElement.offsetTop - navbarHeight, // Resta la altura del navbar
                     behavior: "smooth"
+=======
+                // Desplazamiento suave hacia el elemento destino
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start" // Alinea el inicio del elemento al inicio del viewport
+>>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
                 });
             }
         });
     });
+<<<<<<< HEAD
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -41,3 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+=======
+});
+>>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
