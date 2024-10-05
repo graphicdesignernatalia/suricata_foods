@@ -26,6 +26,7 @@ UI personalizada: Uso de colores, tipografías y estilos visuales consistentes c
 🖼️ Capturas de pantalla
 
 Pantalla principal: 
+
 ![Banner](assets/img/banner.png)
 
 
