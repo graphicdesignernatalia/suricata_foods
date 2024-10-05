@@ -1,0 +1,330 @@
+/* Reset de márgenes y paddings para el body */
+/* Estilos generales para el body */
+body {
+    margin: 0; /* Asegúrate de que no haya margen */
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px; /* Ajusta según la altura de tu navbar */
+}
+
+
+/* Navbar */
+/* Estilo general para el menú de navegación */
+.navbar {
+    background-color: #343a40; /* Color de fondo de la barra de navegación */
+    background-color: #343a40; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Asegúrate de que los elementos de la nav se alineen a la derecha */
+}
+
+/* Estilos para el navbar en modo responsivo */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; /* Ocultar el menú por defecto */
+    }
+
+    .navbar-toggler {
+        display: block; /* Mostrar el botón de menú hamburguesa */
+        margin-left: auto; /* Alinear el botón a la derecha */
+    }
+
+    .navbar-collapse.show {
+        display: block !important; /* Mostrar el menú al hacer clic en el hamburguesa */
+        flex-direction: column; /* Cambiar a columna */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Espaciado vertical entre los elementos del menú */
+    }
+}
+
+
+
+/* Estilos para los elementos del menú */
+.nav-link {
+    color: #ffffff; /* Color del texto de los enlaces */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    padding: 10px; /* Espaciado interior */
+}
+
+
+.nav-link:hover {
+    color: #f8f9fa; /* Cambiar el color al pasar el cursor (sin azul) */
+    text-decoration: none; /* Sin subrayado al hacer hover */
+}
+
+/* Estilos para el navbar en modo responsivo */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; /* Ocultar el menú por defecto */
+    }
+    .navbar-toggler {
+        display: block; /* Mostrar el botón de menú hamburguesa */
+    }
+    .navbar-collapse.show {
+        display: block !important; /* Mostrar el menú al hacer clic en el hamburguesa */
+        flex-direction: column; /* Cambiar a columna */
+    }
+
+    
+}
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+    html {
+      scroll-padding-top: 80px; /* Ajusta el desplazamiento superior para dispositivos móviles */
+    }
+  }
+
+/* Estilos generales para la sección de productos */
+/* Estilos generales para la sección de productos */
+#productos {
+    padding: 0; /* Sin espaciado adicional */
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    width: 100%;
+    margin-top: -5px; /* Aseguramos que el fondo gris esté pegado al banner */
+}
+
+/* Estilo para el encabezado en productos */
+#productos header h1 {
+    margin: 0; /* Elimina márgenes en el encabezado */
+    padding: 10px 0; /* Espaciado solo en la parte superior e inferior */
+}
+
+/* Ajuste en móviles (pantallas pequeñas) */
+@media (max-width: 576px) {
+    #productos {
+        margin-top: -10px; /* Ajustamos el margen superior en móviles */
+    }
+}
+
+/* Títulos */
+#productos h1 {
+    color: #343a40; /* Color del texto del título */
+}
+
+/* Estilo de las tarjetas */
+.card {
+    border: 1px solid #dee2e6; /* Bordes de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Animación al hacer hover */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+.card img {
+    border-top-left-radius: 10px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 10px; /* Bordes redondeados en la parte superior */
+}
+
+/* Estilos para los textos dentro de las tarjetas */
+.card-title {
+    color: #007bff; /* Color del título de la tarjeta */
+}
+
+.card-text {
+    font-size: 14px; /* Tamaño de texto más pequeño */
+    color: #6c757d; /* Color del texto */
+}
+
+/* Enlaces dentro de las tarjetas */
+.card-link {
+    color: #007bff; /* Color de los enlaces */
+    font-weight: bold; /* Peso de la fuente para los enlaces */
+}
+
+.card-link:hover {
+    color: #0056b3; /* Color al hacer hover en los enlaces */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilo para la lista de ingredientes */
+.list-group-item {
+    border: none; /* Sin borde para los elementos de la lista */
+    font-size: 14px; /* Tamaño de texto más pequeño */
+    color: #495057; /* Color del texto */
+}
+
+/* Espaciado entre las tarjetas */
+.mb-5 {
+    margin-bottom: 3rem; /* Espaciado inferior */
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px; /* Espacio entre tarjetas en móviles */
+    }
+}
+
+
+
+/* Clases de fondo */
+.bg-bgrosa {
+    background-color: #e83e8c; /* Rosa */
+}
+
+.bg-footerone-propio {
+    background-color: #17a2b8; /* Azul */
+}
+
+/* Estilos para el logo en el footer */
+.logo-footer {
+    width: 3%; /* Tamaño del logo */
+}
+
+/* Estilos responsivos para la imagen del footer */
+.imagen-footer {
+    width: 10%; /* Valor por defecto para móviles */
+}
+
+
+/* Estilos responsivos para pantallas medianas */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .imagen-footer {
+        width: 15%; /* Aumenta el tamaño en pantallas medianas */
+    }
+}
+
+/* Estilos para pantallas grandes (opcional) */
+@media screen and (min-width: 993px) {
+    .imagen-footer {
+        width: 20%; /* Aumenta aún más en pantallas grandes */
+    }
+}
+
+/* Estilos generales para la sección hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0; /* Elimina el relleno superior */
+    margin-top: -150px; /* Ajusta este valor según sea necesario */
+}
+
+
+/* Imagen de fondo para la hero section */
+.hero-background {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-top: 60px; /* Ajusta el valor según sea necesario */
+    /* Otros estilos para tu banner */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 576px) {
+    .hero-background {
+        min-height: 300px; /* Altura mínima en pantallas pequeñas */
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .hero-background {
+        min-height: 400px; /* Altura mínima en pantallas medianas */
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .hero-background {
+        min-height: 500px; /* Altura mínima en pantallas grandes */
+    }
+}
+
+
+
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 576px) {
+    .hero-background {
+        min-height: 300px; /* Altura mínima en pantallas pequeñas */
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .hero-background {
+        min-height: 400px; /* Altura mínima en pantallas medianas */
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .hero-background {
+        min-height: 500px; /* Altura mínima en pantallas grandes */
+    }
+}
+
+/* Estilo general para las pestañas */
+.nav-tabs .nav-link {
+    border: none; /* Quitar bordes */
+    background-color: #343a40; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #495057; /* Color al pasar el mouse */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #6c757d; /* Color de fondo para la pestaña activa */
+    color: #fff; /* Color del texto para la pestaña activa */
+}
+
+/* Estilo del contenido de las pestañas */
+.tab-content {
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #dee2e6; /* Bordes alrededor del contenido */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para el contenido */
+}
+.card {
+    transition: none; /* Sin transición al hacer hover */
+    box-shadow: none; /* Sin sombra para la tarjeta */
+}
+
+/* Asegurarse de que no hay hover en la tarjeta */
+.card:hover {
+    box-shadow: none; /* Asegúrate de que no haya sombra en hover */
+    transform: none; /* Sin transformación al hacer hover */
+}
+.custom-title {
+    color: #e83e8c; /* Cambia este valor por el color que desees */
+} 
+
+.card-title {
+    color: #e83e8c; /* Cambia este valor por el color que desees */
+}
+
+/* Ajusta el espacio en la parte superior de la sección de contacto */
+#contacto {
+    scroll-margin-top: 40px; /* Ajusta esta cantidad según la altura de tu navbar */
+}
+
+/* Estilo del botón de enviar */
+#contacto button[type="submit"] {
+    background-color: #e83e8c; /* Color de fondo rosa */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre el botón */
+}
+
+/* Opcional: efecto hover para el botón */
+#contacto button[type="submit"]:hover {
+    background-color: #d63384; /* Un tono ligeramente más oscuro al pasar el ratón */
+}
+
+
+
+
