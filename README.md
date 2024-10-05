@@ -23,7 +23,7 @@ Sección de Productos: Presenta una serie de tarjetas con productos que ofrecen 
 Formulario de Contacto: Permite a los usuarios ponerse en contacto con la empresa de manera rápida.
 UI personalizada: Uso de colores, tipografías y estilos visuales consistentes con la marca.
 
-🖼️ Capturas de pantalla
+🖼️ Captura de pantalla
 
 Pantalla principal: 
 
