@@ -8,10 +8,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-<<<<<<< HEAD
     scroll-padding-top: 60px; /* Ajusta según la altura de tu navbar */
-=======
->>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
 }
 
 
@@ -23,7 +20,7 @@ html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
-<<<<<<< HEAD
+
 .navbar-nav {
     margin-left: auto; /* Asegúrate de que los elementos de la nav se alineen a la derecha */
 }
@@ -50,12 +47,10 @@ html {
 }
 
 
-=======
 .nav-item {
     margin: 10px 0; /* Espaciado vertical */
 }
 
->>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
 
 /* Estilos para los elementos del menú */
 .nav-link {
@@ -82,7 +77,6 @@ html {
         display: block !important; /* Mostrar el menú al hacer clic en el hamburguesa */
         flex-direction: column; /* Cambiar a columna */
     }
-<<<<<<< HEAD
 
     
 }
@@ -113,7 +107,7 @@ html {
     #productos {
         margin-top: -10px; /* Ajustamos el margen superior en móviles */
     }
-=======
+
     .nav-item {
         margin: 10px 0; /* Espaciado vertical entre los elementos del menú */
     }
@@ -126,7 +120,6 @@ html {
     padding: 100px 0; /* Espaciado superior e inferior */
     background-color: #f8f9fa; /* Color de fondo gris claro */
     width: 100%; /* Asegurarte de que ocupa todo el ancho */
->>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
 }
 
 /* Títulos */
@@ -191,8 +184,6 @@ html {
     }
 }
 
-
-
 /* Clases de fondo */
 .bg-bgrosa {
     background-color: #e83e8c; /* Rosa */
@@ -242,13 +233,9 @@ html {
     height: auto;
     min-height: 400px;
     object-fit: cover;
-    margin-top: 0px;
-<<<<<<< HEAD
     margin-top: 60px; /* Ajusta el valor según sea necesario */
     /* Otros estilos para tu banner */
-=======
->>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
-}
+
 
 /* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 576px) {
@@ -268,9 +255,6 @@ html {
         min-height: 500px; /* Altura mínima en pantallas grandes */
     }
 }
-
-
-
 
 /* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 576px) {
@@ -334,11 +318,11 @@ html {
 
 /* Ajusta el espacio en la parte superior de la sección de contacto */
 #contacto {
-<<<<<<< HEAD
+
     scroll-margin-top: 40px; /* Ajusta esta cantidad según la altura de tu navbar */
-=======
+
     scroll-margin-top: 100px; /* Ajusta esta cantidad según la altura de tu navbar */
->>>>>>> e8a4699f2548ef9c3e5ddfe5cd9d9b01315b0ffe
+
 }
 
 /* Estilo del botón de enviar */
@@ -356,7 +340,3 @@ html {
 #contacto button[type="submit"]:hover {
     background-color: #d63384; /* Un tono ligeramente más oscuro al pasar el ratón */
 }
-
-
-
-
