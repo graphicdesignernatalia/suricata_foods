@@ -232,29 +232,73 @@ html {
     width: 100%;
     height: auto;
     min-height: 400px;
-    background-image: url('ruta_de_tu_imagen.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
-    background-size: cover; /* La imagen cubrirá todo el área sin cortarse */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    margin-top: 60px; /* Ajusta el valor según sea necesario */
+    background-image: url('ruta_de_tu_imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 60px;
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Asegura que el logo y el menú hamburguesa estén en los extremos */
+    align-items: center; /* Centra verticalmente el logo y el menú */
+    padding: 10px 20px; /* Ajusta el espaciado del navbar */
+}
+
+.navbar-brand {
+    max-height: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Responsividad para pantallas muy pequeñas */
 @media screen and (max-width: 576px) {
     .hero-background {
-        min-height: 200px; /* Altura mínima en pantallas pequeñas */
+        min-height: 200px;
+        margin-top: 70px; /* Ajusta para evitar que el navbar lo tape */
+    }
+
+    .navbar {
+        padding: 10px 15px; /* Reduce el padding para pantallas muy pequeñas */
+    }
+
+    .navbar-brand {
+        max-height: 40px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Alinea el menú hamburguesa a la derecha */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Centra los elementos del nav */
+        width: 100%; /* Opción para que el menú ocupe el 100% cuando esté abierto */
     }
 }
 
+/* Responsividad para pantallas medianas */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .hero-background {
-        min-height: 400px; /* Altura mínima en pantallas medianas */
+        min-height: 400px;
+    }
+
+    .navbar-brand {
+        max-height: 45px; /* Tamaño intermedio del logo */
+    }
+
+    .navbar-nav {
+        justify-content: flex-end; /* Alinea las palabras del nav a la derecha */
     }
 }
 
+/* Pantallas grandes */
 @media screen and (min-width: 993px) {
     .hero-background {
-        min-height: 500px; /* Altura mínima en pantallas grandes */
+        min-height: 500px;
+    }
+
+    .navbar-nav {
+        justify-content: flex-end; /* Alinea las palabras del nav a la derecha en pantallas grandes */
     }
 }
 
