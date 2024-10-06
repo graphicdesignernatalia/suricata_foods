@@ -227,20 +227,22 @@ html {
 }
 
 
-/* Imagen de fondo para la hero section */
+/* Hero section */
 .hero-background {
     width: 100%;
     height: auto;
     min-height: 400px;
-    object-fit: cover;
+    background-image: url('ruta_de_tu_imagen.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
+    background-size: cover; /* La imagen cubrirá todo el área sin cortarse */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     margin-top: 60px; /* Ajusta el valor según sea necesario */
-    /* Otros estilos para tu banner */
-
+}
 
 /* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 576px) {
     .hero-background {
-        min-height: 300px; /* Altura mínima en pantallas pequeñas */
+        min-height: 200px; /* Altura mínima en pantallas pequeñas */
     }
 }
 
@@ -256,24 +258,6 @@ html {
     }
 }
 
-/* Responsividad para pantallas pequeñas */
-@media screen and (max-width: 576px) {
-    .hero-background {
-        min-height: 300px; /* Altura mínima en pantallas pequeñas */
-    }
-}
-
-@media screen and (min-width: 577px) and (max-width: 992px) {
-    .hero-background {
-        min-height: 400px; /* Altura mínima en pantallas medianas */
-    }
-}
-
-@media screen and (min-width: 993px) {
-    .hero-background {
-        min-height: 500px; /* Altura mínima en pantallas grandes */
-    }
-}
 
 /* Estilo general para las pestañas */
 .nav-tabs .nav-link {
